@@ -28,12 +28,10 @@ class Tagging(BaseCog):
         self._bot = bot
 
     @slash_command(name="tag")
-    async def _tag(self: Self, inter: Interaction) -> None:
-        ...
+    async def _tag(self: Self, inter: Interaction) -> None: ...
 
     @_tag.subcommand()
-    async def create(self: Self, interaction: Interaction) -> None:
-        ...
+    async def create(self: Self, interaction: Interaction) -> None: ...
 
     @_tag.subcommand()
     async def delete(
@@ -45,8 +43,7 @@ class Tagging(BaseCog):
             )
 
     @_tag.subcommand()
-    async def force(self: Self, interaction: Interaction):
-        ...
+    async def force(self: Self, interaction: Interaction): ...
 
     @force.subcommand()
     @app_checks.has_permissions(administrator=True)
