@@ -1,5 +1,7 @@
-from nextcord.ext.commands import Cog
 from nextcord import slash_command
+from nextcord.ext.commands import Cog
+
+
 class BadgeCog(Cog):
     def __init__(self): ...
     @slash_command()
@@ -21,6 +23,7 @@ class BadgeCog(Cog):
                 keyword_filter=["i hate maskduck"]
             ),
         )
+
 
 def setup(bot):
     bot.add_cog(BadgeCog())
